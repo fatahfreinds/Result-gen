@@ -24,6 +24,19 @@ import { SubstituteModule } from './substitute/substitute.module';
 import { FeedsModule } from './feeds/feeds.module';
 import { CustomSettingsModule } from './custom-settings/custom-settings.module';
 import { GalleryModule } from './gallery/gallery.module';
+import { copyFile, existsSync, unlink } from 'fs';
+
+
+let renameSchema = () => {
+  var oldPath = join(process.cwd(), 'src/schema.gql')
+  copyFile(oldPath, '/tmp/schema.gql', (err) => {console.log(err)})
+ unlink(oldPath, (err) => {console.log(err)})
+};
+// calling renameSchema
+renameSchema()
+
+if (existsSync('/tmp/schema.gql'))
+  console.log('The path exists.');
 
 @Module({
   imports: [
@@ -33,17 +46,6 @@ import { GalleryModule } from './gallery/gallery.module';
       envFilePath: '.env',
       isGlobal: true,
     }),
-
-    // config of JWT
-
-    // PassportModule.register({ defaultStrategy: 'jwt' }),
-    // JwtModule.registerAsync({
-    //   useFactory: async () => ({
-    //     secret: process.env.JWT_SECRET,
-    //     signOptions: { expiresIn: '1d' },
-    //   }),
-    // }),
-  
 
 
     // connecting to mysql planetscale server
@@ -81,7 +83,7 @@ import { GalleryModule } from './gallery/gallery.module';
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
       
-      autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+      autoSchemaFile: '/tmp/schema.gql',
       context: ({ req , res }) => ({ req, res }),
       playground:{
         settings: {
@@ -91,7 +93,9 @@ import { GalleryModule } from './gallery/gallery.module';
       cors: {
         credentials: true,
         origin: true
-      }
+      },
+      cache: 'bounded',
+      introspection:true
    
     }),
 
