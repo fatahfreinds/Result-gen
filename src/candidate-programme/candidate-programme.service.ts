@@ -19,7 +19,7 @@ import { DetailsService } from 'src/details/details.service';
 import { CategorySettingsService } from 'src/category-settings/category-settings.service';
 import { Roles } from 'src/credentials/roles/roles.enum';
 import { CredentialsService } from 'src/credentials/credentials.service';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from 'src/utill/util';
 import { CustomSettingsService } from 'src/custom-settings/custom-settings.service';
 import { CustomSetting } from 'src/custom-settings/entities/custom-setting.entity';
 

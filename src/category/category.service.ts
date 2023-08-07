@@ -5,7 +5,7 @@ import { CreateCategoryInput } from './dto/create-category.input';
 import { UpdateCategoryInput } from './dto/update-category.input';
 import { Category } from './entities/category.entity';
 import { SectionsService } from 'src/sections/sections.service';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from 'src/utill/util';
 import { Stream } from 'stream';
 import { google } from 'googleapis';
 

@@ -7,7 +7,7 @@ import { Repository } from 'typeorm';
 import { ProgrammesService } from 'src/programmes/programmes.service';
 import { CategoryService } from 'src/category/category.service';
 import { Programme } from 'src/programmes/entities/programme.entity';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from 'src/utill/util';
 
 @Injectable()
 export class CustomSettingsService {

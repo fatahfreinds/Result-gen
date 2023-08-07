@@ -17,7 +17,7 @@ import { Programme } from 'src/programmes/entities/programme.entity';
 import { arrayInput } from 'src/candidate-programme/dto/array-input.dto';
 import { CredentialsService } from 'src/credentials/credentials.service';
 import { Credential } from 'src/credentials/entities/credential.entity';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from 'src/utill/util';
 
 @Injectable()
 export class JudgeService {

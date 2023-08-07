@@ -18,7 +18,7 @@ import { CandidateProgrammeModule } from './candidate-programme/candidate-progra
 import { DetailsModule } from './details/details.module';
 import { CategorySettingsModule } from './category-settings/category-settings.module';
 import { CredentialsModule } from './credentials/credentials.module';
-import { CustomContextProvider } from './utils/custom';
+import { CustomContextProvider } from './utill/custom';
 import { JudgeModule } from './judge/judge.module';
 import { SubstituteModule } from './substitute/substitute.module';
 import { FeedsModule } from './feeds/feeds.module';

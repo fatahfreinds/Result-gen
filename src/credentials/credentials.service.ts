@@ -9,7 +9,7 @@ import { TeamsService } from 'src/teams/teams.service';
 import { Category } from 'src/category/entities/category.entity';
 import { LoginService } from './login/login.service';
 import { Roles } from './roles/roles.enum';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from 'src/utill/util';
 import { JwtPayload } from './jwt/jwt.interface';
 
 @Injectable()

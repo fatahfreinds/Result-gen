@@ -11,7 +11,7 @@ import { Credential } from 'src/credentials/entities/credential.entity';
 import { Type } from 'src/programmes/entities/programme.entity';
 import { CandidateProgramme } from 'src/candidate-programme/entities/candidate-programme.entity';
 import { CredentialsService } from 'src/credentials/credentials.service';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from 'src/utill/util';
 var firebase = require('firebase/app');
 var firebasedb = require('firebase/database');
 

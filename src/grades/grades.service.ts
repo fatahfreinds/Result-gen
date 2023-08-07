@@ -4,7 +4,7 @@ import { Repository } from 'typeorm';
 import { CreateGradeInput } from './dto/create-grade.input';
 import { UpdateGradeInput } from './dto/update-grade.input';
 import { Grade } from './entities/grade.entity';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from 'src/utill/util';
 
 @Injectable()
 export class GradesService {

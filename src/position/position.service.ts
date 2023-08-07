@@ -4,7 +4,7 @@ import { Repository } from 'typeorm';
 import { CreatePositionInput } from './dto/create-position.input';
 import { UpdatePositionInput } from './dto/update-position.input';
 import { Position } from './entities/position.entity';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from 'src/utill/util';
 
 @Injectable()
 export class PositionService {

@@ -4,7 +4,7 @@ import { Repository } from 'typeorm';
 import { CreateSkillInput } from './dto/create-skill.input';
 import { UpdateSkillInput } from './dto/update-skill.input';
 import { Skill } from './entities/skill.entity';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from 'src/utill/util';
 
 @Injectable()
 export class SkillService {

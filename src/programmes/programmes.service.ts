@@ -14,7 +14,7 @@ import { Skill } from 'src/skill/entities/skill.entity';
 import { CredentialsService } from '../credentials/credentials.service';
 import { ScheduleCreate } from './dto/scheduleCreate.dto';
 import { createInput } from './dto/create-inputs.inputs';
-import { fieldsIdChecker, fieldsValidator, isDateValid } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator, isDateValid } from 'src/utill/util';
 
 @Injectable()
 export class ProgrammesService {

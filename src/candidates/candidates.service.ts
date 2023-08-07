@@ -14,11 +14,11 @@ import { CandidateProgrammeService } from 'src/candidate-programme/candidate-pro
 import { Team } from 'src/teams/entities/team.entity';
 import { CreateInput } from './dto/create-input.dto';
 import { CredentialsService } from 'src/credentials/credentials.service';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from 'src/utill/util';
 import { createReadStream } from 'fs';
 import { join } from 'path';
 import { Readable } from 'stream';
-import { driveConfig } from '../utils/googleApi.auth';
+import { driveConfig } from '../utill/googleApi.auth';
 // import { drive } from 'src/utils/googleApi.auth';
 
 @Injectable()

@@ -4,7 +4,7 @@ import { Repository } from 'typeorm';
 import { CreateDetailInput } from './dto/create-detail.input';
 import { UpdateDetailInput } from './dto/update-detail.input';
 import { Detail } from './entities/detail.entity';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from 'src/utill/util';
 
 @Injectable()
 export class DetailsService {

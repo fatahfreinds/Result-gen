@@ -7,7 +7,7 @@ import { Repository } from 'typeorm';
 import { CategoryService } from 'src/category/category.service';
 import { Credential } from 'src/credentials/entities/credential.entity';
 import { CredentialsService } from 'src/credentials/credentials.service';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from 'src/utill/util';
 
 @Injectable()
 export class CategorySettingsService {
