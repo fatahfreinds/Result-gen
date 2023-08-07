@@ -4,7 +4,7 @@ import { Repository } from 'typeorm';
 import { CreateSectionInput } from './dto/create-section.input';
 import { UpdateSectionInput } from './dto/update-section.input';
 import { Section } from './entities/section.entity';
-import { fieldsIdChecker, fieldsValidator } from 'src/utils/util';
+import { fieldsIdChecker, fieldsValidator } from '../utils/util';
 
 @Injectable()
 export class SectionsService {
