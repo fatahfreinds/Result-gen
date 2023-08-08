@@ -80,8 +80,7 @@ import { GalleryModule } from './gallery/gallery.module';
 
     GraphQLModule.forRoot<ApolloDriverConfig>({
       driver: ApolloDriver,
-      
-      autoSchemaFile: join(process.cwd(), 'src/schema.gql'),
+      autoSchemaFile: '/tmp/schema.gql',
       context: ({ req , res }) => ({ req, res }),
       playground:{
         settings: {
@@ -91,7 +90,9 @@ import { GalleryModule } from './gallery/gallery.module';
       cors: {
         credentials: true,
         origin: true
-      }
+      },
+      cache: 'bounded',
+      introspection:true
    
     }),
 
