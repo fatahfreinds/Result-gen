@@ -61,7 +61,7 @@ export class LoginService {
         
 
         return {
-          user,
+         admin : user,
           token,
         };
       }
