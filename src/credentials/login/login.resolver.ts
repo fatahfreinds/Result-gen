@@ -30,7 +30,7 @@ export class LoginResolver {
       
       if (val.token) {
         context.res.cookie('__user', `${val.token}`, { httpOnly: true }, { maxAge: 1000 });
-        return val.user;
+        return val ;
       }
     } catch (err) {
       throw new HttpException(err.message, HttpStatus.UNAUTHORIZED);
