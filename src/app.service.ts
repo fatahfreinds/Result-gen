@@ -7,4 +7,10 @@ getHello() {
       message : "Server Successfully started"
     };
   }
+    
+postHello() {
+    return {
+      message : "You Posted Successfully"
+    };
+  }
 }
