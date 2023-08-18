@@ -17,8 +17,15 @@ async function bootstrap() {
   app.use(cookieParser());
 
   // cors origin
-  app.enableCors();
 
+   CorsOptions = {
+    origin: '*', // Replace with your frontend domain
+    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+  };
+
+ app.enableCors(CorsOptions);
+  
   await app.listen(configService.get('PORT') || 3000);
 }
 bootstrap();
