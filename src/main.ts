@@ -18,14 +18,14 @@ async function bootstrap() {
 
   // cors origin
 
-   CorsOptions = {
+  const CorsOptions = {
     "origin": "*",
   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
   "preflightContinue": false,
   "optionsSuccessStatus": 204
   }
 
- app.enableCors(CorsOptions);
+ app.enableCors();
   
   await app.listen(configService.get('PORT') || 3000);
 }
