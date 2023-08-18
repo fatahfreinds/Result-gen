@@ -88,8 +88,12 @@ import { GalleryModule } from './gallery/gallery.module';
         },
       },
       cache: 'bounded',
-      introspection:true
-   
+      introspection:true ,
+    cors: {
+        origin: true,
+        credentials: true,
+
+      },
     }),
 
     CandidatesModule,
