@@ -87,10 +87,6 @@ import { GalleryModule } from './gallery/gallery.module';
           'request.credentials': 'include',
         },
       },
-      cors: {
-        credentials: true,
-        origin: true
-      },
       cache: 'bounded',
       introspection:true
    
