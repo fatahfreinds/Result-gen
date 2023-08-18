@@ -19,10 +19,11 @@ async function bootstrap() {
   // cors origin
 
    CorsOptions = {
-    origin: '*', // Replace with your frontend domain
-    methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
-    credentials: true,
-  };
+    "origin": "*",
+  "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
+  "preflightContinue": false,
+  "optionsSuccessStatus": 204
+  }
 
  app.enableCors(CorsOptions);
   
