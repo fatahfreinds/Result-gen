@@ -30,7 +30,7 @@ export class LoginResolver {
       }
       
       if (val.token) {
-        context.res.cookie('__user', `${val.token}`, { httpOnly: true }, { maxAge: 1000 });
+        context.res.cookie('__user', `${val.token}`, { httpOnly: true }, { maxAge: 1000 }  , { sameSite: 'none' }, { secure: true });
         return val ;
       }
     } catch (err) {
