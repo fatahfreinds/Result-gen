@@ -19,13 +19,13 @@ async function bootstrap() {
   // cors origin
 
   const CorsOptions = {
-    "origin": "*",
+    "origin": "http://localhost:3000/",
   "methods": "GET,HEAD,PUT,PATCH,POST,DELETE",
   "preflightContinue": false,
   "optionsSuccessStatus": 204
   }
 
- app.enableCors();
+ app.enableCors(CorsOptions);
   
   await app.listen(configService.get('PORT') || 3000);
 }
